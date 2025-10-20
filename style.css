@@ -112,6 +112,7 @@ h5 {
   font-size: 1.25rem;
 }
 p {
+  font-size: 1.2rem;
   margin-bottom: 1.25rem;
   color: var(--clr-grey-5);
 }
@@ -136,6 +137,9 @@ p {
   h3,
   h4 {
     line-height: 1;
+  }
+  p {
+    font-size: 1.5rem;
   }
 }
 
@@ -277,6 +281,66 @@ p {
   }
 }
 /* ---------------------Services--------------------- */
+.services {
+  background: var(--clr-grey-10);
+}
+.services-center {
+}
+.service {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.service-icon {
+  display: inline-block;
+  font-size: 2rem;
+  padding: 0.5rem;
+  background-color: var(--clr-primary-5);
+  color: var(--clr-primary-1);
+
+  margin-bottom: 1.5rem;
+}
+.service-info {
+}
+.service-title {
+}
+.service-text {
+  max-width: 28rem;
+  margin: 0 auto;
+}
+@media screen and (min-width: 568px) {
+  .services-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin: 0 auto;
+  }
+  .service {
+    flex: 0 0 calc(50% - 3rem);
+    /* margin-bottom: 0; */
+  }
+}
+@media screen and (min-width: 768px) {
+  .service {
+    flex: 0 0 calc(33.3% - 3rem);
+  }
+}
+@media screen and (min-width: 992px) {
+  .service {
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .service-icon {
+    align-self: flex-start;
+  }
+  .service-title {
+    margin-bottom: 0.5rem;
+  }
+}
 /* ---------------------Featured Tours--------------------- */
 /* ---------------------Contact--------------------- */
 /* ---------------------Gallery--------------------- */
