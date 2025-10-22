@@ -414,5 +414,57 @@ p {
   }
 }
 /* ---------------------Contact--------------------- */
-
+.contact {
+  background: var(--clr-primary-5);
+}
+.contact-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-title {
+  color: var(--clr-white);
+}
+.contact-title p {
+  color: var(--clr-primary-8);
+}
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-around; */
+  gap: 0.5rem;
+  max-width: 32rem;
+}
+.form-control,
+.form-btn {
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: var(--spacing);
+  background-color: var(--clr-white);
+  text-transform: capitalize;
+}
+.form-control {
+  flex: 1 1 auto;
+}
+.form-btn {
+  background-color: var(--clr-primary-8);
+  color: var(--clr-primary-1);
+  transition: var(--transition);
+}
+.form-btn:hover {
+  background-color: var(--clr-primary-1);
+  color: var(--clr-primary-5);
+}
+@media screen and (min-width: 992px) {
+  .contact-center {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .contact-form {
+    flex: 1 1 auto;
+    max-width: 100%;
+    padding-left: 7rem;
+  }
+}
 /* ---------------------Gallery--------------------- */
